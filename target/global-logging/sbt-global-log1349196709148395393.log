@@ -1,0 +1,24 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"4","parents":[]},"eventTime":1685517672601,"message":"Compiling akka-stream-practice","dataKind":"compile-task","data":{"target":{"uri":"file:/Users/thanh_da/Documents/Flinters/thanh_da/scala/akka-stream-practice/#akka-stream-practice/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"4","parents":[]},"eventTime":1685517672609,"message":"Compiled akka-stream-practice","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/Users/thanh_da/Documents/Flinters/thanh_da/scala/akka-stream-practice/#akka-stream-practice/Compile"},"errors":0,"warnings":0,"time":8}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"5","parents":[]},"eventTime":1685517672616,"message":"Compiling akka-stream-practice-test","dataKind":"compile-task","data":{"target":{"uri":"file:/Users/thanh_da/Documents/Flinters/thanh_da/scala/akka-stream-practice/#akka-stream-practice/Test"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"5","parents":[]},"eventTime":1685517672621,"message":"Compiled akka-stream-practice-test","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/Users/thanh_da/Documents/Flinters/thanh_da/scala/akka-stream-practice/#akka-stream-practice/Test"},"errors":0,"warnings":0,"time":5}})[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed May 31, 2023 2:21:12 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (/Users/thanh_da/Documents/Flinters/thanh_da/scala/akka-stream-practice/target/scala-2.12/zinc/inc_compile_2.12.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed May 31, 2023 2:21:12 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0msymbol Agg[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition locations Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled request received: shutdown: JsonRpcRequestMessage(2.0, ♨2, shutdown, null})[0m
