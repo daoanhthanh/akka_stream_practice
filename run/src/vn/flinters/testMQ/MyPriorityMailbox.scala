@@ -1,4 +1,4 @@
-package vn.flinters
+package vn.flinters.testMQ
 
 import akka.actor.ActorSystem
 import akka.dispatch.{PriorityGenerator, UnboundedPriorityMailbox}
@@ -12,8 +12,7 @@ class MyPriorityMailbox(settings: ActorSystem.Settings, config: Config)
       // Assign higher priority to messages based on specific criteria
       case DownloadLink => 0
       case ProcessDownloadedFiles => 1
-      case SomeLowPriorityMessage => 2
       // Assign a default priority to other messages
-      case _ => 3
+      case _ => 2
     }
   )

@@ -4,3 +4,6 @@ out
 .vscode
 .bloop
 .metals
+.bsp
+.scala-build
+target
