@@ -39,22 +39,6 @@ object MessageQueue extends App {
       case message => println(s"Received $message")
     }
 
-    private def exponentialBackOff[T](retryTimes: Int = -1)(
-        factor: Float = 1.5f,
-        init: Int = 1,
-        cur: Int = 0
-    )(f: => Future[T]): Future[T] = {
-      val next: Int =
-        if (cur == 0) init
-        else Math.ceil(cur * factor).toInt
-
-      f.recoverWith {
-        case DownloadingFileNotCompleted =>
-          after(next.millis)(exponentialBackOff()(factor, init, next)(f))
-        case t: Throwable => throw t
-      }
-    }
-
     def high(
         factor: Float = 1.5f,
         init: Int = 1,
